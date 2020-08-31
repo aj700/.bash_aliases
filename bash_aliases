@@ -89,7 +89,7 @@ alias top="htop"
 #history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
 
 alias reboot="sudo reboot"
-alias update="sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge"
+alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove --purge -y"
 
 # Make your directories and files access rights sane.
 function sanitize() { chmod -R u=rwX,g=rX,o= "$@" ;}
