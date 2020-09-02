@@ -12,8 +12,10 @@ HISTCONTROL=ignoredups
 alias hm="cd ~"
 alias ws="cd ~/workspace"
 alias cls="clear"
+alias my='sudo chown -R `id -u`'
+
 # The ubiquitous 'll': directories first, with alphanumeric sorting:
-alias ll="ls -alv --group-directories-first"
+alias ll="ls -alv --group-directories-first -F --color=always"
 alias lm='ll |more'        #  Pipe through 'more'
 alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
