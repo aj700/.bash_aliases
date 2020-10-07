@@ -1,3 +1,5 @@
+export PS1='$(whoami)@${HOSTNAME%%.*} [$(pwd)]# '
+
 alias cls="clear"
 alias ll="ls -alv --group-directories-first -F --color=always"
 alias la='ll -A'
